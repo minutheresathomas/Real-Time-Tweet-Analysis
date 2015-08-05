@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>TwitterTrendAnalysis</display-name>
+  <servlet>
+    <description></description>
+    <display-name>WorldMapTagsServlet</display-name>
+    <servlet-name>WorldMapTagsServlet</servlet-name>
+    <servlet-class>cmpe239.twitter.servlet.WorldMapTagsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WorldMapTagsServlet</servlet-name>
+    <url-pattern>/view/WorldMapTags</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>WordCloudLocationServlet</display-name>
+    <servlet-name>WordCloudLocationServlet</servlet-name>
+    <servlet-class>cmpe239.twitter.servlet.WordCloudLocationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WordCloudLocationServlet</servlet-name>
+    <url-pattern>/view/WordCloud</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TopLocationsServlet</display-name>
+    <servlet-name>TopLocationsServlet</servlet-name>
+    <servlet-class>cmpe239.twitter.servlet.TopLocationsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TopLocationsServlet</servlet-name>
+    <url-pattern>/view/TopLocations</url-pattern>
+  </servlet-mapping>
+</web-app>
